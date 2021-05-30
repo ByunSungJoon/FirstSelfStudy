@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./flex-shrink.css" />
+  </head>
+  <body>
+    <h1>Container width: 750px</h1>
+    <h3>Item basic width: 300px</h3>
+    <hr />
+    <section>
+      <h3>Item01에 flex-shrink: 0 부여</h3>
+      <div>초과한 150px에 대해 Item02, 03이 1:1 비율로 나뉘어 줄어든다.</div>
+      <article class="container wrapper01">
+        <div class="item01">Item01 300px</div>
+        <div class="item02">Item02 225px</div>
+        <div class="item03">Item03 225px</div>
+      </article>
+    </section>
+    <section>
+      <h3>Item01, 02, 03에 flex-shrink:0 부여</h3>
+      <div>모든 Item이 줄어들지 않는다.</div>
+      <article class="container wrapper02">
+        <div class="item01">Item01 300px</div>
+        <div class="item02">Item02 300px</div>
+        <div class="item03">Item03 300px</div>
+      </article>
+    </section>
+    <section>
+      <h3>Item03에 flex-shrink: 3 부여</h3>
+      <div>900 - 750 만큼의 초과분에 대해 1:1:3 비율 만큼 줄어든다.</div>
+      <article class="container wrapper03">
+        <div class="item01">Item01 270px</div>
+        <div class="item02">Item02 270px</div>
+        <div class="item03">Item03 210px</div>
+      </article>
+    </section>
+  </body>
+</html>

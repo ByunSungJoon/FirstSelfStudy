@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./flex-grow.css" />
+  </head>
+  <body>
+    <h1>Container width: 750px</h1>
+    <h3>Item basic width: 100px</h3>
+    <hr />
+    <h3>Item01에만 flex-grow:1 부여</h3>
+    <section>
+      <article class="container wrapper01">
+        <div class="item01">Item01 550px</div>
+        <div class="item02">Item02 100px</div>
+        <div class="item03">Item03 100px</div>
+      </article>
+    </section>
+    <section>
+      <h3>Item01, 02에는 flex-grow:1, Item03에는 3부여</h3>
+      <div>
+        750 - 300의 남은 부분인 450에 대해 1:1:3으로 분배해 남은 영역을
+        확장한다.
+      </div>
+      <article class="container wrapper02">
+        <div class="item01">Item01 190px</div>
+        <div class="item02">Item02 190px</div>
+        <div class="item03">Item03 370px</div>
+      </article>
+    </section>
+    <section>
+      <h3>Item01, 02에는 flex:grow: 0.5, Item03에는 1.5부여</h3>
+      <div>위의 예제와 같은 비율을 가지므로 결과는 동일하다.</div>
+      <article class="container wrapper02">
+        <div class="item01">Item01 190px</div>
+        <div class="item02">Item02 190px</div>
+        <div class="item03">Item03 370px</div>
+      </article>
+    </section>
+  </body>
+</html>
