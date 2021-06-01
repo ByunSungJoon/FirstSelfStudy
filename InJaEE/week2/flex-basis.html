@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./flex-basis.css" />
+  </head>
+  <body>
+    <h1>Container width: 540px</h1>
+    <hr/>
+    <h3>기본값</h3>
+    <section>
+      <div>플렉스 아이템이 부모 영역을 초과하지만 flex-basis: auto 일때</div>
+      <article class="container wrapper01">
+        <div class="item01">2200px</div>
+        <div class="item02">2200px</div>
+        <div class="item03">2200px</div>
+      </article>
+    </section>
+    <section>
+      <div>
+        플렉스 아이템들이 부모 영역을 모두 채우지 못하고 flex-basis: auto 일때
+      </div>
+      <article class="container wrapper02">
+        <div class="item01">width: 100px</div>
+        <div class="item02">width: 200px</div>
+        <div class="item03">width: 300px</div>
+      </article>
+    </section>
+    <h3>길이 단위</h3>
+    <section>
+      <div>flex-basis와  width 프로퍼티를 동시에 사용하면 flex-basis가 우선이다.</div>
+      <article class="container wrapper03" >
+        <div class="item01">width: 100px; flex-basis: 300px</div>
+        <div class="item02">width: 200px; flex-basis: 200px</div>
+        <div class="item03">width: 300px; flex-basis: 100px</div>
+      </article>
+    </section>
+    <h3>퍼센트 단위</h3>
+    <article class="container wrapper04" >
+      <div class="item01">flex-basis: auto</div>
+      <div class="item02">flex-basis: 100%</div>
+      <div class="item03">flex-basis: auto</div>
+    </article>
+    <div>Item01: 540px * 70% = 378px</div>
+    <div>Item02: 110px</div>
+    <div>Item03: 540px * 80% = 432px</div>
+    <div>총합: 920px</div>
+    <strong>너비 비율: 540px(컨테이너의 크기) / 920px(378 + 110 + 432, 원래 크기) = 0.587</strong>
+    <article class="container wrapper05" >
+      <div class="item01">flex-basis: 70%; 378px*0.587</div>
+      <div class="item02">flex-basis: auto; 110px*0.587</div>
+      <div class="item03">flex-basis: 80%; 432px*0.587</div>
+    </article>
+  </body>
+</html>

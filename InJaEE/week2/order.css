@@ -1,0 +1,21 @@
+ul {
+    display: inline-flex;
+}
+li {
+    list-style-type: none;
+    margin: 0 12px;
+    width: 150px;
+    height: 150px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+li:nth-child(1) {
+    order: 2;
+}
+li:nth-child(5) {
+    order: 1;
+}
+li:nth-child(6) {
+    order: -1;
+}

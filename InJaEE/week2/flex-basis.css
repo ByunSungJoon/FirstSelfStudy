@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  text-align: center;
+  width: 540px;
+  background-color: hotpink;
+}
+.container > div {
+  width: 100px;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+/* wrapper01 */
+.wrapper01 .item01 {
+  width: 2000px;
+}
+.wrapper01 .item02 {
+  width: 2000px;
+}
+.wrapper01 .item03 {
+  width: 2000px;
+}
+/* wrapper02 */
+.wrapper02 .item01 {
+  width: 100px;
+}
+.wrapper02 .item02 {
+  width: 200px;
+}
+.wrapper02 .item03 {
+  width: 300px;
+}
+/* wrapper03 */
+.wrapper03 .item01 {
+  width: 200px;
+  flex-basis: 600px;
+}
+.wrapper03 .item02 {
+  width: 400px;
+  flex-basis: 400px;
+}
+.wrapper03 .item03 {
+  width: 600px;
+  flex-basis: 200px;
+}
+/* wrapper04 */
+.wrapper04 .item01{}
+.wrapper04 .item02{
+  flex-basis: 100%
+}
+.wrapper04 .item03{}
+/* wrapper05 */
+.wrapper05 .item01{
+  flex-basis: 70%;
+
+}
+.wrapper05 .item02{
+  flex-basis: auto;
+}
+.wrapper05 .item03{
+  flex-basis: 80%;
+}
